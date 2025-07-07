@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Agência de marketing digital especializada em tráfego pago e anúncios no Google, Instagram e WhatsApp. Atendemos clientes em todo o Brasil com foco em resultados reais.">
-  <meta name="keywords" content="agência de marketing digital, tráfego pago, gestor de tráfego, Pedra de Guaratiba, Google Ads, anúncios no Instagram, marketing para negócios locais">
-  <meta name="author" content="Raro Digital">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agência de marketing digital especializada em tráfego pago e anúncios no Google, Instagram e WhatsApp. Atendemos clientes em todo o Brasil com foco em resultados reais." />
+  <meta name="keywords" content="agência de marketing digital, tráfego pago, gestor de tráfego, Pedra de Guaratiba, Google Ads, anúncios no Instagram, marketing para negócios locais" />
+  <meta name="author" content="Raro Digital" />
   <title>Raro Digital | Marketing e Tráfego para Negócios</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -69,22 +71,27 @@
       margin-left: -1em;
     }
     .cta {
-      background-color: #3b82f6;
+      background: linear-gradient(to right, #3b82f6, #2563eb);
       color: white;
       text-align: center;
       padding: 2rem;
-      border-radius: 8px;
+      border-radius: 12px;
       margin-top: 2rem;
     }
     .cta a {
-      background-color: white;
-      color: #3b82f6;
-      padding: 0.75rem 1.5rem;
-      font-weight: 600;
-      border-radius: 4px;
+      background-color: #facc15;
+      color: #1e3a8a;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      border-radius: 50px;
       text-decoration: none;
       display: inline-block;
       margin-top: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background-color: #fbbf24;
     }
     .testimonials {
       background-color: #f3f4f6;
@@ -153,14 +160,18 @@
       font-size: 30px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
     }
-    #whatsapp-float i {
-      margin-top: 15px;
+    #whatsapp-float:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <nav>
       <a href="#">Início</a>
       <a href="#servicos">Serviços</a>
@@ -171,12 +182,12 @@
     <p>Marketing e Tráfego Pago para Negócios em Todo o Brasil</p>
   </header>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>Quem Somos</h2>
     <p>A Raro Digital é uma agência de marketing digital especializada em tráfego pago, Google Ads, Instagram e estratégias para atrair clientes todos os dias. Atendemos empresas, prestadores de serviços e comércios locais de forma online, com foco total em resultados reais.</p>
   </section>
 
-  <section id="servicos">
+  <section id="servicos" data-aos="fade-right">
     <h2>O que Fazemos</h2>
     <ul>
       <li>Gestão de Anúncios no Google e Instagram</li>
@@ -187,26 +198,26 @@
     </ul>
   </section>
 
-  <section>
+  <section data-aos="fade-left">
     <h2>Regiões que Atendemos</h2>
     <p>Atendemos clientes de todo o Brasil, com presença local nas regiões de Pedra de Guaratiba, Campo Grande, Santa Cruz e demais bairros da Zona Oeste do Rio de Janeiro.</p>
   </section>
 
-  <section id="clientes" class="testimonials">
+  <section id="clientes" class="testimonials" data-aos="fade-up">
     <h2>O que dizem nossos clientes</h2>
     <div class="testimonial">“Comecei a anunciar com a Raro Digital e já nos primeiros dias vieram clientes pelo Google. Atendimento excelente e transparente!” – Fernanda, Estética RJ</div>
     <div class="testimonial">“O suporte é direto no WhatsApp e as campanhas realmente funcionam. Estou muito satisfeito!” – Rafael, Reboque Zona Oeste</div>
     <div class="testimonial">“Finalmente uma agência que entrega resultado. Parabéns pelo trabalho!” – Luana, Loja de Roupas</div>
   </section>
 
-  <section id="contato" class="formulario">
+  <section id="contato" class="formulario" data-aos="zoom-in">
     <h2>Entre em Contato</h2>
     <form action="https://formspree.io/f/meqynqzk" method="POST">
       <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" id="nome" name="nome" required />
 
       <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required />
 
       <label for="mensagem">Mensagem</label>
       <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
@@ -215,20 +226,28 @@
     </form>
   </section>
 
-  <div class="cta">
+  <div class="cta" data-aos="fade-up">
     <h2>Quer atrair mais clientes com marketing digital?</h2>
     <p>Fale com um especialista agora mesmo e receba um diagnóstico gratuito.</p>
-    <a href="https://wa.me/5521979143631?text=Ol%C3%A1!%20Vi%20o%20perfil%20da%20Raro%20Digital%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20atrair%20clientes%20com%20tr%C3%A1fego%20pago%20e%20marketing%20digital.%20%F0%9F%9A%80" target="_blank">Falar no WhatsApp</a>
+    <a href="https://wa.me/5521979143631?text=Ol%C3%A1!%20Vi%20o%20perfil%20da%20Raro%20Digital%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20atrair%20clientes%20com%20tr%C3%A1fego%20pago%20e%20marketing%20digital.%20%F0%9F%9A%80" target="_blank">💬 Falar com um Especialista</a>
   </div>
 
   <footer>
-    &copy; 2025 Raro Digital – Todos os direitos reservados.<br>
+    &copy; 2025 Raro Digital – Todos os direitos reservados.<br />
     <a href="https://www.instagram.com/rarodigital_" target="_blank">Instagram</a>
     <a href="https://www.tiktok.com/@rarodigital" target="_blank">TikTok</a>
   </footer>
 
-  <a id="whatsapp-float" href="https://wa.me/5521979143631?text=Ol%C3%A1!%20Vi%20o%20perfil%20da%20Raro%20Digital%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20atrair%20clientes%20com%20tr%C3%A1fego%20pago%20e%20marketing%20digital.%20%F0%9F%9A%80" target="_blank">
-    <i>📞</i>
+  <a
+    id="whatsapp-float"
+    href="https://wa.me/5521979143631?text=Ol%C3%A1!%20Vi%20o%20perfil%20da%20Raro%20Digital%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20atrair%20clientes%20com%20tr%C3%A1fego%20pago%20e%20marketing%20digital.%20%F0%9F%9A%80"
+    target="_blank"
+  >
+    💬
   </a>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
