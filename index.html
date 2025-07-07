@@ -8,8 +8,8 @@
   <meta name="author" content="Raro Digital" />
   <title>Raro Digital | Marketing e Tráfego para Negócios</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
     * {
       margin: 0;
@@ -18,14 +18,14 @@
       font-family: 'Inter', sans-serif;
     }
     body {
-      background-color: #f9f9f9;
+      background: linear-gradient(to bottom right, #f0f4ff, #dbeafe);
       color: #222;
       line-height: 1.6;
     }
     header {
       background: linear-gradient(to right, #1e3a8a, #3b82f6);
       color: white;
-      padding: 2.5rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
       position: relative;
     }
@@ -41,15 +41,15 @@
       font-weight: 600;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #e0e7ff;
     }
     section {
-      padding: 2rem;
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
     }
@@ -94,15 +94,22 @@
       background-color: #fbbf24;
     }
     .testimonials {
-      background-color: #f3f4f6;
+      background-color: #f0f4ff;
       padding: 2rem;
       margin-top: 2rem;
       border-top: 2px solid #3b82f6;
     }
     .testimonial {
-      margin-bottom: 1.5rem;
-      font-style: italic;
-      color: #374151;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .stars {
+      color: #facc15;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
     .formulario {
       padding: 2rem;
@@ -168,10 +175,16 @@
     #whatsapp-float:hover {
       background-color: #1ebe5d;
     }
+    .logo {
+      width: 140px;
+      margin: 0 auto 20px;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <header data-aos="fade-down">
+    <img src="https://rarodigital.github.io/assets/logo.png" alt="Logo Raro Digital" class="logo" />
     <nav>
       <a href="#">Início</a>
       <a href="#servicos">Serviços</a>
@@ -205,9 +218,18 @@
 
   <section id="clientes" class="testimonials" data-aos="fade-up">
     <h2>O que dizem nossos clientes</h2>
-    <div class="testimonial">“Comecei a anunciar com a Raro Digital e já nos primeiros dias vieram clientes pelo Google. Atendimento excelente e transparente!” – Fernanda, Estética RJ</div>
-    <div class="testimonial">“O suporte é direto no WhatsApp e as campanhas realmente funcionam. Estou muito satisfeito!” – Rafael, Reboque Zona Oeste</div>
-    <div class="testimonial">“Finalmente uma agência que entrega resultado. Parabéns pelo trabalho!” – Luana, Loja de Roupas</div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      “Comecei a anunciar com a Raro Digital e já nos primeiros dias vieram clientes pelo Google. Atendimento excelente e transparente!” – Fernanda, Estética RJ
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      “O suporte é direto no WhatsApp e as campanhas realmente funcionam. Estou muito satisfeito!” – Rafael, Reboque Zona Oeste
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      “Finalmente uma agência que entrega resultado. Parabéns pelo trabalho!” – Luana, Loja de Roupas
+    </div>
   </section>
 
   <section id="contato" class="formulario" data-aos="zoom-in">
